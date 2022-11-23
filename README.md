@@ -4,7 +4,16 @@ sudo apt update
 
 sudo apt install dante-server
 
-sudo nano /etc/danted.conf
+cd /etc/
+
+rm -rf danted.conf
+
+wget https://raw.githubusercontent.com/starrising321/socks5-telegram/main/danted.conf
+
+nano danted.conf
+
+search external: eth0 if it is default than ok if not change to external: venet0:0
+
 
 sudo useradd --shell /usr/sbin/nologin proxyuser
 
