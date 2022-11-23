@@ -19,11 +19,11 @@ sudo useradd --shell /usr/sbin/nologin proxyuser
 
 sudo passwd proxyuser
 
-sudo ufw allow 110
+sudo ufw allow 112
 
-sudo ufw allow 143
+sudo ufw allow 113
 
-sudo ufw allow 443
+sudo ufw allow 114
 
 or
 
