@@ -1,5 +1,5 @@
 #socks5 proxy telegram
-# install dante-server
+#install dante-server
 sudo apt update
 sudo apt install dante-server
 
@@ -27,11 +27,11 @@ sudo systemctl enable danted
 
 sudo systemctl status danted
 
-# you may see dante logs (connect disconnect error):
+#you may see dante logs (connect disconnect error):
 sudo journalctl -xe -u danted
-# add -f argument to attach and watch
+#add -f argument to attach and watch
 
-# test proxy on your local machine:
+#test proxy on your local machine:
 curl -v -x socks5://proxyuser:password@yourserverip:443 https://www.yandex.ru/
 
 
@@ -39,20 +39,6 @@ These files can be loaded again with the command iptables-restore for IPv4.
 
 Debian/Ubuntu: iptables-restore < /etc/iptables/rules.v4
 
-
-
-
-
-
-===========================================================================================
-or download latest dante-server deb for Ubuntu, works for 16.04 and 18.04:
-wget http://archive.ubuntu.com/ubuntu/pool/universe/d/dante/dante-server_1.4.2+dfsg-2build1_amd64.deb
-or older version:
-wget http://ppa.launchpad.net/dajhorn/dante/ubuntu/pool/main/d/dante/dante-server_1.4.1-1_amd64.deb
- install it:
-sudo dpkg -i dante-server_*.deb
-it may fail to start, it's okay, packaged config is garbage
-=======================================================================================
 
 ===============
 
