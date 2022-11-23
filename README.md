@@ -12,8 +12,8 @@ sudo passwd proxyuser
 
 sudo ufw allow 110
 
-
 sudo ufw allow 143
+
 sudo ufw allow 443
 
 or
